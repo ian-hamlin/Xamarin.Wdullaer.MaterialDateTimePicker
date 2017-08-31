@@ -1,0 +1,55 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateChangedListener']" name="visibility">public</attr>
+  <attr
+    path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateChangedListener']"
+    name="managedName"
+  >IOnDateChangedListenerSupport</attr>
+  <remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='SimpleMonthAdapter']" />
+
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p0']"
+        name="name">view</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p1']"
+        name="name">year</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p2']"
+        name="name">monthOfYear</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p3']"
+        name="name">dayOfMonth</attr>
+
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/interface[@name='TimePickerDialog.OnTimeSetListener']/method[@name='onTimeSet' and count(parameter)=4]/parameter[@name='p0']"
+        name="name">view</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/interface[@name='TimePickerDialog.OnTimeSetListener']/method[@name='onTimeSet' and count(parameter)=4]/parameter[@name='p1']"
+        name="name">year</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/interface[@name='TimePickerDialog.OnTimeSetListener']/method[@name='onTimeSet' and count(parameter)=4]/parameter[@name='p2']"
+        name="name">monthOfYear</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/interface[@name='TimePickerDialog.OnTimeSetListener']/method[@name='onTimeSet' and count(parameter)=4]/parameter[@name='p3']"
+        name="name">dayOfMonth</attr>
+  
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p0']"
+        name="name">callback</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p1']"
+        name="name">hourOfDay</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p2']"
+        name="name">minute</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p3']"
+        name="name">second</attr>
+  
+  <!-- The following are from the v2 project https://github.com/alexsorokoletov/Xamarin.Wdullaer.MaterialDateTimePicker -->
+  <!-- Change a parameter names from generic (i.e. p0) to more meaningful ones. -->
+  <remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='MonthView.MonthViewTouchHelper']/method[@name='getVisibleVirtualViews' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;java.lang.Integer&gt;']]" />
+  <remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='MonthView.MonthViewTouchHelper']" />
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p0']"
+        name="name">callback</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p1']"
+        name="name">hourOfDay</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p2']"
+        name="name">minute</attr>
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.time']/class[@name='TimePickerDialog']/method[@name='newInstance' and count(parameter)=4]/parameter[@name='p3']"
+        name="name">is24HourMode</attr>
+</metadata>
