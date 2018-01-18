@@ -13,6 +13,13 @@
   >IOnDateChangedListenerSupport</attr>
   <remove-node path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='SimpleMonthAdapter']" />
 
+  <!-- rename some interfaces and methods as 3.5 has some classes that match interfaces. -->
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog.Version']"
+  name="managedName">DatePickerDialog.LibVersion</attr>
+  
+  <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/class[@name='DatePickerDialog.ScrollOrientation']"
+        name="managedName">DatePickerDialog.LibScrollOrientation</attr>
+  
   <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p0']"
         name="name">view</attr>
   <attr path="/api/package[@name='com.wdullaer.materialdatetimepicker.date']/interface[@name='DatePickerDialog.OnDateSetListener']/method[@name='onDateSet' and count(parameter)=4]/parameter[@name='p1']"

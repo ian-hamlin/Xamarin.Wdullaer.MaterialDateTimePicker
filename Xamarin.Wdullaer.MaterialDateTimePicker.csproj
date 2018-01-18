@@ -83,7 +83,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\materialdatetimepicker-3.3.0.aar" />
+    <LibraryProjectZip Include="Jars\MaterialDateTimePicker-v3.5.0.aar" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
